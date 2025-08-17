@@ -1,5 +1,6 @@
 import type React from "react";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
+import Image from "next/image";
 
 
 export const Header: React.FC = () => {
@@ -7,32 +8,22 @@ export const Header: React.FC = () => {
 
 	return (
 		<header
-			className="fixed top-0 left-0 w-full h-[var(--header-size)] z-50 bg-background/100 backdrop-blur-md border-[1px] border-b border-solid border-black"
+			className="fixed top-0 left-0 lg:ml-[10%] w-full h-[var(--header-height)] z-50 bg-background/100 flex flex-row shadow-sm shadow-foreground items-end"
 		>
-			<div className="grid grid-cols-2 grid-rows-2 gap-1">
-				{/* Left side - H1/H2 content */}
-				<div className="flex-1">
-					<h1 className="text-2xl font-bold gradient-text">
-						Poções de Volúpia
-					</h1>
-					<h3 className="text-sm text-muted-foreground">
-						O CÍRCULO SECRETO DO PRAZER FEMININO APÓS OS 50 ANOS
-					</h3>
+			<div id="header-text" className="absolute h-full w-[100%] flex flex-col justify-evenly px-[1rem]">
+				<h1 className="text-primary! font-black text-[100%] text-center w-full">
+					TENHA UMA VIDA SEXUAL PRAZEROSA E SEM CULPA DEPOIS DOS 50 ANOS.
+				</h1>
+				<div className="flex flex-col max-w-[75%] gap-[0.5rem] text-[80%]!">
+					<span>POÇÕES DE VOLÚPIA - O Círculo do Prazer Feminino 50+</span>
+					<h2>Uma jornada e um clube secreto  EXCLUSIVO para mulheres que desejam se reconectar com o prazer, e querem viver a sexualidade com sensualidade junto a cumplicidade de outras mulheres.</h2>
 				</div>
-
-				{/* Center - SVG Box placeholder */}
-				<div className="flex-shrink-0 mx-8">
-					<div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow"></div>
+				<div id="sign-in-form" className="h-[20%] w-full bg-amber-300">
+					Formulário aqui
 				</div>
-
-				{/* Right side - Regular box */}
-				<div className="col-span-2 row-start-2">
-					<div className="px-6 py-2 bg-surface border border-border rounded-lg shadow-glow hover:shadow-glow-strong transition-all duration-300">
-						<span className="text-sm font-medium">
-							Aqui vai o email e o botão de cadastro{" "}
-						</span>
-					</div>
-				</div>
+			</div>
+			<div id="header-image" className="fixed z-[-1] right-[-20%] h-[var(--header-img-size)] w-[var(--header-img-size)] justify-end opacity-50">
+				<Image src={`${process.env.NEXT_PUBLIC_IMG_CDN}/${process.env.NEXT_PUBLIC_APP_HASH}/lurdinha-style-final.svg`} alt="stylish image" fill/>
 			</div>
 		</header>
 	);

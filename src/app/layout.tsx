@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+const lexend = Lexend({
 	subsets: ["latin"],
 });
 
@@ -33,9 +29,10 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="no-scrollbar ">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${lexend.className} antialiased text-primary-foreground bg-background select-none`}
 			>
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

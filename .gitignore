@@ -24,6 +24,7 @@
 .DS_Store
 *.pem
 .excalidraw*
+images/
 
 # debug
 npm-debug.log*
