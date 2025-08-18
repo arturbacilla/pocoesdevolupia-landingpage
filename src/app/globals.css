@@ -5,10 +5,10 @@
 
 #palette {
   --palette-background: #1F1E20;
-  --palette-background-secondary: #FBF9F4
-  --palette-primary: #f08a4b
-  --palette-secondary: #81A8C5
-  --palette-tertiary: #94C7C2
+  --palette-background-secondary: #FBF9F4;
+  --palette-primary: #f08a4b;
+  --palette-secondary: #81A8C5;
+  --palette-tertiary: #94C7C2;
 }
 
 @theme inline {
@@ -76,7 +76,6 @@
   --accent-foreground: oklch(0.2369 0.004 308.27);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);

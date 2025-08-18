@@ -1,4 +1,4 @@
-import { ReactElement } from "react"
+import type { ReactElement } from "react"
 import { Separator } from "../ui/separator"
 import Image from "next/image"
 import { FileHeart } from "lucide-react"

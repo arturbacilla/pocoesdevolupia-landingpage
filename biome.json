@@ -7,7 +7,12 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["**","! /.next","! globals.css"]
+		"includes": [
+			"**",
+			"! /.next",
+			"! globals.css",
+			"! biome.json"
+		]
 	},
 	"formatter": {
 		"enabled": true,
@@ -18,7 +23,10 @@
 		"rules": {
 			"recommended": true,
 			"correctness": {
-				 "useUniqueElementIds": "off"
+				"useUniqueElementIds": "off"
+			},
+			"suspicious": {
+				"noUnknownAtRules": "off"
 			}
 		}
 	},
@@ -29,7 +37,7 @@
 	},
 	"html": {
 		"formatter": {
-			"enabled":true
+			"enabled": true
 		}
 	},
 	"assist": {

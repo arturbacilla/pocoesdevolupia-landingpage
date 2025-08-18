@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "bunx --bun biome lint"
+    "lint": "bunx --bun @biome/biome lint"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",

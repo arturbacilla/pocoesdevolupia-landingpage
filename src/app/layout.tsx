@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 
 const lexend = Lexend({
