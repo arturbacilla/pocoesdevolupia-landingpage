@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [new URL('https://cdn.arturbacilla.dev/**')]
   },
+  crossOrigin: 'anonymous',
   redirects: async () => {
     return [
       {
