@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "pocoesdeluxuria-landingpage",
+      "name": "pocoesdevolupia-landingpage",
       "dependencies": {
         "@hookform/resolvers": "^5.2.1",
         "@radix-ui/react-aspect-ratio": "^1.1.7",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 	description: "O Círculo secreto do prazer feminino após os 50 anos.",
 	openGraph: {
 		type: "website",
-		url: "https://pocoesdeluxuria.club",
+		url: "https://pocoesdevolupia.club",
 		images: [{ url: "" }], //TODO - Adicionar imagem
 		title: "LANÇAMENTO - Club Poções de Luxúria",
 		description: "O Círculo secreto do prazer feminino após os 50 anos.",
