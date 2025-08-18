@@ -9,5 +9,9 @@ export default function Footer() {
 				<Link href="/policy">
 				Política de Privacidade
 				</Link>
+				<span>|</span>
+				<span>Desenvolvido por <Link href="https://linkedin.com/in/arturbacilla">
+				@arturbacilla
+				</Link></span>
 				</footer>
 }

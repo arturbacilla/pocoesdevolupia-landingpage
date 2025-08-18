@@ -60,7 +60,7 @@
   --lg-width: 80vw;
   --footer-size: 5vh;
   --background: oklch(0.2369 0.004 308.27);
-  --foreground: oklch(0.9823 0.0069 88.64);
+  --foreground: oklch(0.2576 0.004 308.27);
   --card: oklch(0.9823 0.0069 88.64); /* FBF9F4 */
   --card-foreground: oklch(0.2369 0.004 308.27);
   --popover: oklch(0.9823 0.0069 88.64);
@@ -97,7 +97,7 @@
   --lg-width: var(--lg-width);
   --footer-size: var(--footer-size);
   --background: oklch(0.2369 0.004 308.27);
-  --foreground: oklch(0.9823 0.0069 88.64);
+  --foreground: oklch(0.2576 0.004 308.27);
   --card: oklch(0.2369 0.004 308.27);
   --card-foreground: oklch(0.9823 0.0069 88.64);
   --popover: oklch(0.2369 0.004 308.27);

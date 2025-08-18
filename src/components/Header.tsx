@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
 
 	return (
 		<header
-			className="fixed top-0 left-0 lg:ml-[10%] w-full h-[var(--header-height)] z-50 bg-background/100 flex flex-row shadow-sm shadow-foreground items-end"
+			className="fixed top-0 left-0 lg:ml-[10%] w-full h-[var(--header-height)] z-50 bg-background/100 flex flex-row shadow-sm shadow-card items-end"
 		>
 			<div id="header-text" className="absolute h-full w-[100%] flex flex-col justify-evenly px-[1rem]">
 				<h1 className="text-primary! font-black text-[100%] text-center w-full">
