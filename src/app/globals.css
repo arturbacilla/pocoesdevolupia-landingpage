@@ -52,13 +52,15 @@
   --content-size: calc(100dvh - var(--header-height) + var(--footer-size));
   --header-img-size: calc(var(--header-height) * 0.75);
   --headerless-content: calc(100vh - var(--footer-size));
+  --lg-side-margin: calc((100vw - var(--lg-width))/2);
 }
 
 :root {
   --radius: 0.625rem;
   --header-height: 41dvh;
-  --lg-width: 80vw;
   --footer-size: 5vh;
+  --lg-width: 60vw;
+  --lg-header-height: 39dvh;
   --background: oklch(0.2369 0.004 308.27);
   --foreground: oklch(0.2576 0.004 308.27);
   --input: oklch(0.9823 0.0069 88.64); /* FBF9F4 */

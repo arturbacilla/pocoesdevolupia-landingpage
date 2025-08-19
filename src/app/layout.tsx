@@ -27,9 +27,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="no-scrollbar ">
+		<html lang="en" className="no-scrollbar lg:w-[var(--lg-width)]! lg:ml-[var(--lg-side-margin)]">
 			<body
-				className={`${lexend.className} antialiased text-primary-foreground bg-background select-none`}
+				className={`${lexend.className} antialiased text-primary-foreground bg-background lg:bg-black select-none`}
 			>
 				{children}
 				<Footer />

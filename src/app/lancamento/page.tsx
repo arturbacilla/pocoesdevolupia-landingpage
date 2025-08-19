@@ -11,7 +11,7 @@ export default function Lancamento() {
       <Header />
       <div
         id="sections-box"
-        className="flex flex-col mt-[var(--header-height)] min-h-full! w-[100%]! snap-y! snap-proximity! bg-foreground"
+        className="flex flex-col mt-[var(--header-height)] lg:mt-[var(--lg-header-height)] min-h-full! w-[100%]! snap-y! snap-proximity! bg-foreground"
       >
         <Programa/>
         <Entregaveis />
