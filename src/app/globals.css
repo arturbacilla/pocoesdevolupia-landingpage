@@ -61,6 +61,7 @@
   --footer-size: 5vh;
   --lg-width: 60vw;
   --lg-header-height: 39dvh;
+  --md-header-height: 35dvh;
   --background: oklch(0.2369 0.004 308.27);
   --foreground: oklch(0.2576 0.004 308.27);
   --input: oklch(0.9823 0.0069 88.64); /* FBF9F4 */

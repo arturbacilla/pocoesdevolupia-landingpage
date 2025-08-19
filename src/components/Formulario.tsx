@@ -65,22 +65,31 @@ export default function Formulario() {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="grid grid-cols-5 grid-rows-2 lg:grid-rows-[1fr_auto_1fr] gap-x-1 gap-y-2 w-full"
+				className="grid grid-cols-5 grid-rows-2 md:grid-rows-[1fr_auto_1fr] gap-x-1 gap-y-2 md:gap-y-4 lg:gap-y-2 w-full"
 			>
-				<div className="col-span-3 lg:col-start-1 lg:row-start-1">
+				<div className="col-span-3 md:col-start-1 md:row-start-1">
 					<FormField
 						control={form.control}
 						name="email"
 						render={({ field }) => (
 							<FormItem>
 								<FormControl>
-									<Input placeholder="Digite seu e-mail" {...field} />
+									<Input
+										placeholder="Digite seu e-mail"
+										{...field}
+										onFocus={() => {
+											window.scrollTo({
+												top: 0,
+												behavior: "smooth",
+											});
+										}}
+									/>
 								</FormControl>
 							</FormItem>
 						)}
 					/>
 				</div>
-				<div className="relative h-full! w-full! col-span-2 col-start-4 lg:col-start-1 lg:col-span-3 lg:row-start-3">
+				<div className="relative h-full! w-full! col-span-2 col-start-4 md:col-start-1 md:col-span-3 md:row-start-3">
 					<div
 						className={`absolute inline-flex h-full! w-full! ${scrollProgress > 70 && "animate-ping"} rounded-full bg-primary opacity-75`}
 					/>
@@ -91,7 +100,7 @@ export default function Formulario() {
 						INSCREVER
 					</Button>
 				</div>
-				<div className="col-span-5 row-start-2 lg:col-start-1 lg:col-span-3">
+				<div className="col-span-5 row-start-2 md:col-start-1 md:col-span-3">
 					<FormField
 						control={form.control}
 						name="gdpr"

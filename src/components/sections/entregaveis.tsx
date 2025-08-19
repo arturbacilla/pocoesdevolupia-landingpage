@@ -38,14 +38,14 @@ export default function Entregaveis() {
 		<section className="relative w-full  snap-start! flex flex-col px-[1rem] items-center gap-[1rem]">
 			<span className="text-secondary! font-bold">Entregáveis do Evento</span>
 			<div className="relative w-full h-full flex flex-col ">
-				<ol className="relative flex flex-col gap-[1rem]">
+				<ol className="relative flex flex-col md:flex-row gap-[1rem]">
 					{entregaveis.map((item) => (
 						<div
 							key={item.id}
 							id={`${item.id}-listitem`}
 							className="w-full flex flex-row items-center gap-[1rem]"
 						>
-							<div className="relative w-[15vw]! h-[15vw]! md:w-[8vw]! md:h-[8vw]! min-w-[15vw]! md:min-w-[8vw]! rounded-[50%]! object-cover bg-secondary flex items-center justify-center">
+							<div className="relative w-[15vw]! h-[15vw]! md:w-[8vw]! md:h-[8vw]! lg:w-[3vw]! lg:h-[3vw]! min-w-[15vw]! md:min-w-[8vw]! lg:min-w-[3vw]! rounded-[50%]! object-cover bg-secondary flex items-center justify-center">
 								{item.icon}
 							</div>
 							<div className="flex flex-col">
