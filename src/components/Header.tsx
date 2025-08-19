@@ -12,10 +12,10 @@ export const Header: React.FC = () => {
 				id="header-text"
 				className="absolute h-full w-[100%] flex flex-col justify-evenly md:justify-start md:gap-[1rem] px-[1rem] md:py-[1rem]"
 			>
-				<h1 className="text-primary! font-black text-[100%] md:text-[175%] text-center w-full lg:w-[70%]">
+				<h1 className="text-primary! font-black text-[100%] md:text-[1.3rem] lg:text-[1.5rem] text-center w-full lg:w-[70%]">
 					TENHA UMA VIDA SEXUAL PRAZEROSA E SEM CULPA DEPOIS DOS 50 ANOS.
 				</h1>
-				<div className="flex flex-col max-w-[75%] lg:max-w-[60%] text-justify gap-[0.5rem] text-[80%]! md:text-[100%]!">
+				<div className="flex flex-col max-w-[75%] lg:max-w-[60%] text-justify gap-[0.5rem] text-[80%]! md:text-[0.8rem]! lg:text-[1.2rem]">
 					<span>POÇÕES DE VOLÚPIA - O Círculo do Prazer Feminino 50+</span>
 					<h2>
 						Uma jornada e um clube secreto EXCLUSIVO para mulheres que desejam
