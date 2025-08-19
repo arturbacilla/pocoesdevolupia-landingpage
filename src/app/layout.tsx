@@ -3,7 +3,6 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 
 import { GoogleTagManager } from "@next/third-parties/google";
-import posthog from "posthog-js";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -30,11 +29,6 @@ export const viewport: Viewport = {
 	userScalable: false,
 };
 
-// biome-ignore lint/style/noNonNullAssertion: Recommended usage from posthog doc
-posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
-	api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
-	defaults: "2025-05-24",
-});
 
 export default function RootLayout({
 	children,
