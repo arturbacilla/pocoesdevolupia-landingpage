@@ -1,1 +1,5 @@
-export default function Obrigado() {}
+export default function Obrigada() {
+  return <main>
+
+  </main>
+}

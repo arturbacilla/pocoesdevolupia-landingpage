@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const lexend = Lexend({
 	subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
 			>
 				{children}
 				<Footer />
+				<Toaster richColors />
 			</body>
 		</html>
 	);

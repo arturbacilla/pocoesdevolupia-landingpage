@@ -4,8 +4,8 @@ import { Separator } from "../ui/separator"
 export default function Recado() {
   return <section className="relative w-full  snap-start! flex flex-col p-[1rem] items-center gap-[1rem]">
     <span className="text-secondary! font-bold">Recado das autoras</span>
-    <div className="relative w-[85vw] min-h-[25vh]! h-[40%]!">
-      <Image loading="lazy" priority={false} loader={({src, width}) => `${process.env.NEXT_PUBLIC_IMG_CDN}/${process.env.NEXT_PUBLIC_APP_HASH}/${src}?w=${width}&f=webp`} src="exp-lurdinha.png" alt="calendar with date" fill />
+    <div className="relative w-[85vw] min-h-[25vh]! h-[40%]! md:w-[50vw]">
+      <Image loading="lazy" priority={false} loader={({src, width}) => `${process.env.NEXT_PUBLIC_IMG_CDN}/${process.env.NEXT_PUBLIC_APP_HASH}/${src}?w=${width}&f=webp`} src="exp-lurdinha.png" alt="image of lurdinha" fill />
     </div>
     <div className="relative w-full h-full flex flex-col ">
       <p className="text-justify">“Este conteúdo nasceu da nossa própria busca. 

@@ -1,7 +1,9 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { z } from "zod";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
 import { Button } from "./ui/button";
@@ -17,6 +19,7 @@ const formSchema = z.object({
 
 export default function Formulario() {
 	const scrollProgress = useScrollProgress() || 0;
+	const router = useRouter();
 
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
@@ -30,23 +33,33 @@ export default function Formulario() {
 	} = form;
 
 	const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    await fetch('https://handler.send.hotmart.com/subscription/5duwP0b', {
-      method: "POST",
-      headers: {
-        "Accept": "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
-      },
-      body: JSON.stringify({
-        email: values.email,
-        b_5duwP0b:"",
-        gdpr: values.gdpr && "Concordo+em+receber+os+e-mails"
-      }),
-    }).then((result) => result) //[T]todo - alterar para redirect
-    .catch((e) => console.error(e)) 
+		try {
+			const response = await fetch("/api/subscribe", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					email: values.email,
+					gdpr: values.gdpr,
+				}),
+			}).catch((err) => {
+				console.error(err);
+				return err;
+			});
 
-
-  };
+			if (!response.ok || response instanceof Error) {
+				toast.error("Aconteceu algum erro, tente novamente mais tarde");
+				console.error(response);
+			} else {
+				toast.success("Pronto");
+				router.push("/obrigada");
+			}
+		} catch (e) {
+			console.error("Network or unexpected error:", e);
+			// Handle network errors or other unexpected issues
+		}
+	};
 	//
 	return (
 		<Form {...form}>
@@ -92,7 +105,9 @@ export default function Formulario() {
 											onCheckedChange={(checked) => field.onChange(checked)}
 											className={`${errors.gdpr && "border-destructive! border-2! animate-pulse"}`}
 										/>
-										<Label className="text-[0.6rem]" htmlFor="gdpr">Concordo em receber os e-mails</Label>
+										<Label className="text-[0.6rem]" htmlFor="gdpr">
+											Concordo em receber os e-mails
+										</Label>
 									</div>
 								</FormControl>
 							</FormItem>
