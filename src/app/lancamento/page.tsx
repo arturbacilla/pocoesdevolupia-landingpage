@@ -4,8 +4,10 @@ import { Header } from "@/components/Header";
 import Entregaveis from "@/components/sections/entregaveis";
 import Programa from "@/components/sections/programa";
 import Recado from "@/components/sections/recado";
+import usePreventZoom from "@/hooks/usePreventZoom";
 
 export default function Lancamento() {
+  usePreventZoom()
   return (
     <main className="top-0 w-full h-full">
       <Header />
