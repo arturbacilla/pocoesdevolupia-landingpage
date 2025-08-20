@@ -29,7 +29,6 @@ export const viewport: Viewport = {
 	userScalable: false,
 };
 
-
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -43,7 +42,7 @@ export default function RootLayout({
 			<body
 				className={`${lexend.className} antialiased text-primary-foreground bg-background lg:bg-black select-none`}
 			>
-				<GoogleTagManager gtmId="GTM-KQDNQP9Z"/>
+				<GoogleTagManager gtmId="GTM-KQDNQP9Z" />
 				{children}
 				<Footer />
 				<Toaster richColors />

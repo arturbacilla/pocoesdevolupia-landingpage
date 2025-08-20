@@ -1,11 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import type React from "react";
 import Formulario from "./Formulario";
 
 export const Header: React.FC = () => {
-
 	return (
 		<header className="fixed top-0 left-0 w-full lg:w-[var(--lg-width)] lg:ml-[var(--lg-side-margin)] h-[var(--header-height)] md:h-[var(--md-header-height)] lg:h-[var(--lg-header-height)] z-50 bg-background/100 flex flex-row border-b-1 border-b-card items-end">
 			<div
@@ -23,10 +20,7 @@ export const Header: React.FC = () => {
 						sensualidade junto a cumplicidade de outras mulheres.
 					</h2>
 				</div>
-				<div
-					id="sign-in-form"
-					className={`h-[20%] w-full `}
-				>
+				<div id="sign-in-form" className={`h-[20%] w-full `}>
 					<Formulario />
 				</div>
 			</div>

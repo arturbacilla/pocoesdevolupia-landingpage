@@ -12,7 +12,7 @@ export default function Programa() {
 				<div className="relative w-full h-full flex flex-row gap-[0.5rem] items-center justify-center">
 					<span>Data:</span>
 					<span className="font-black text-primary!">
-						29 de AGOSTO de 2025 - 20h
+						{process.env.NEXT_PUBLIC_WEBINAR_DATE}
 					</span>
 				</div>
 			</div>
