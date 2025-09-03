@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/',
-        destination: '/lancamento',
+        destination: '/replay',
         permanent: true,
       }
     ];

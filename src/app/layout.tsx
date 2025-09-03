@@ -11,15 +11,15 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-	title: "LANÇAMENTO - Club Poções de Luxúria",
+	title: "Club Poções de Volúpia",
 	description: "O Círculo secreto do prazer feminino após os 50 anos.",
 	openGraph: {
 		type: "website",
 		url: "https://pocoesdevolupia.club",
 		images: [{ url: "" }], //TODO - Adicionar imagem
-		title: "LANÇAMENTO - Club Poções de Luxúria",
+		title: "Club Poções de Volúpia",
 		description: "O Círculo secreto do prazer feminino após os 50 anos.",
-		siteName: "LANÇAMENTO - Club Poções de Luxúria",
+		siteName: "Club Poções de Volúpia",
 	},
 };
 export const viewport: Viewport = {

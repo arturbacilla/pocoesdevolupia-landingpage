@@ -22,24 +22,23 @@ export default function Obrigada() {
 			</p>
 			<p className="text-center">
 				1) clique no botão abaixo para você entrar no grupo de whatsapp onde
-				receberá os links de acesso à AULA DE APRESENTAÇÃO.
+				receberá informações atualizadas sobre o clube.
 			</p>
 			<WhatsappButton />
 			<p className="text-center">
 				2) ACESSE SEU E-MAIL E RESPONDA A PESQUISA QUE TE ENVIAMOS!
 			</p>
 			<p className="text-center">
-				O objetivo desta pesquisa é fazer com que você aproveite ao máximo esse
-				evento! Queremos conhecer um pouquinho de você para garantir que esse
-				evento vá superar as suas expectativas.
+				O objetivo desta pesquisa é conhecer um pouquinho de você para garantir que esse
+				clube supere as suas expectativas!
 			</p>
 
-			<div className="flex flex-col items-center">
+			{/* <div className="flex flex-col items-center">
 				<span>Nos vemos dia </span>
 				<span className="text-primary font-black">
 					{process.env.NEXT_PUBLIC_WEBINAR_DATE} !!!
 				</span>
-			</div>
+			</div> */}
 		</main>
 	);
 }
