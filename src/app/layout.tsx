@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: "https://pocoesdevolupia.club",
-		images: [{ url: "" }], //TODO - Adicionar imagem
+		images: [{ url: `${process.env.NEXT_PUBLIC_IMG_CDN}/${process.env.NEXT_PUBLIC_APP_HASH}/logo.svg` }], //TODO - Adicionar imagem
 		title: "Club Poções de Volúpia",
 		description: "O Círculo secreto do prazer feminino após os 50 anos.",
 		siteName: "Club Poções de Volúpia",
@@ -40,7 +40,7 @@ export default function RootLayout({
 			className="no-scrollbar lg:w-[var(--lg-width)]! lg:ml-[var(--lg-side-margin)]"
 		>
 			<body
-				className={`${lexend.className} antialiased text-primary-foreground bg-background lg:bg-black select-none`}
+				className={`${lexend.className} antialiased text-primary-foreground bg-background lg:bg-white select-none`}
 			>
 				<GoogleTagManager gtmId="GTM-KQDNQP9Z" />
 				{children}
