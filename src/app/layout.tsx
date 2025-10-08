@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: "https://pocoesdevolupia.club",
-		images: [{ url: "" }], //TODO - Adicionar imagem
+		images: [{ url: `${process.env.NEXT_PUBLIC_IMG_CDN}/${process.env.NEXT_PUBLIC_APP_HASH}/logo.svg` }], //TODO - Adicionar imagem
 		title: "Club Poções de Volúpia",
 		description: "O Círculo secreto do prazer feminino após os 50 anos.",
 		siteName: "Club Poções de Volúpia",
