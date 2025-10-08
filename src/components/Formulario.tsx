@@ -14,7 +14,7 @@ import { Label } from "./ui/label";
 
 const formSchema = z.object({
 	email: z.email("Email inválido"),
-	gdpr: z.boolean(),
+	gdpr: z.boolean().refine((val) => !!val),
 });
 
 export default function Formulario() {
@@ -25,6 +25,7 @@ export default function Formulario() {
 		resolver: zodResolver(formSchema),
 		defaultValues: {
 			email: "",
+			gdpr: false,
 		},
 	});
 
@@ -111,8 +112,8 @@ export default function Formulario() {
 										<Checkbox
 											id="gdpr"
 											checked={field.value ?? false}
-											onCheckedChange={(checked) => field.onChange(checked)}
-											className={`${errors.gdpr && "border-destructive! border-2! animate-pulse"}`}
+											onCheckedChange={(checked) => field.onChange(!!checked)}
+											className={`${(errors.gdpr && "border-destructive! border-2! animate-pulse") || "border-1 border-gray-400"}`}
 										/>
 										<Label className="text-[0.6rem]" htmlFor="gdpr">
 											Concordo em receber os e-mails

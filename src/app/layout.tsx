@@ -40,7 +40,7 @@ export default function RootLayout({
 			className="no-scrollbar lg:w-[var(--lg-width)]! lg:ml-[var(--lg-side-margin)]"
 		>
 			<body
-				className={`${lexend.className} antialiased text-primary-foreground bg-background lg:bg-black select-none`}
+				className={`${lexend.className} antialiased text-primary-foreground bg-background lg:bg-white select-none`}
 			>
 				<GoogleTagManager gtmId="GTM-KQDNQP9Z" />
 				{children}

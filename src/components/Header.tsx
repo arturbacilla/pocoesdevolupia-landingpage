@@ -4,7 +4,7 @@ import Formulario from "./Formulario";
 
 export const Header: React.FC = () => {
 	return (
-		<header className="fixed top-0 left-0 w-full lg:w-[var(--lg-width)] lg:ml-[var(--lg-side-margin)] h-[var(--header-height)] md:h-[var(--md-header-height)] lg:h-[var(--lg-header-height)] z-50 bg-background/100 flex flex-row border-b-1 border-b-card items-end">
+		<header className="fixed top-0 left-0 w-full lg:w-[var(--lg-width)] lg:ml-[var(--lg-side-margin)] h-[var(--header-height)] md:h-[var(--md-header-height)] lg:h-[var(--lg-header-height)] z-50 bg-background/100 flex flex-row border-b-1 border-b-card items-end shadow-md">
 			<div
 				id="header-text"
 				className="absolute h-full w-[100%] flex flex-col justify-evenly md:justify-start md:gap-[1rem] px-[1rem] md:py-[1rem]"
@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
 				className="fixed z-[-1] right-[-20%] md:right-[-10%] lg:right-[var(--lg-side-margin)] h-[var(--header-img-size)] w-[var(--header-img-size)] lg:h-[var(--lg-header-height)] lg:w-[var(--lg-header-height)] justify-end opacity-50 md:opacity-100"
 			>
 				<Image
-					src={`${process.env.NEXT_PUBLIC_IMG_CDN}/${process.env.NEXT_PUBLIC_APP_HASH}/lurdinha-style-final.svg`}
+					src={`${process.env.NEXT_PUBLIC_IMG_CDN}/${process.env.NEXT_PUBLIC_APP_HASH}/logo.svg`}
 					alt="stylish image"
 					fill
 				/>
